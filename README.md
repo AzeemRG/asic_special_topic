@@ -66,7 +66,7 @@ We can see number of instructions are reduced
 
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/c4344940-0cc6-48ae-b8a5-572f38792582)
 
-###Spike Simulation & Debugging
+### Spike Simulation & Debugging
 
 
 
