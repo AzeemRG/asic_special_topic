@@ -1,5 +1,5 @@
 # ASIC_CLASS (VLSI Physical Design for ASICs)
-This repository will help to understnad asic flow
+This repository will help to understand asic flow
 (GUIDE : Kunal Ghosh)
 
 # Introduction to Course 
