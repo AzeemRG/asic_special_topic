@@ -1,4 +1,4 @@
-# PES_ASIC_CLASS
+# ASIC_CLASS (VLSI Physical Design for ASICs)
 This repository will help to understnad asic flow
 GUIDE : Kunal Ghosh
 
