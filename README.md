@@ -47,16 +47,23 @@ int main(){
 ```
 ### Using RiscV complier 
 use command ``` riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sumton.o sumton.c ```
+
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/3a15f6fe-f7fb-46f0-962d-d4b3634f5978)
 
 To get assembly code use command ``` riscv64-unknown-elf-objdump -d sumton.o | less```
+
 as we are intrested in <main> type ```/main``` and hit enter 
+
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/30197178-00f1-4f8c-915d-6400a235f868)
+
 Here we can see number of intrustruction used with "-O1" optimization 
 
 Now lets try with ```-Ofast``` optimization 
+
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/7f436102-0f93-4b9a-80ff-38b540d7f659)
+
 We can see number of instructions are reduced
+
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/c4344940-0cc6-48ae-b8a5-572f38792582)
 
 ###Spike Simulation & Debugging
