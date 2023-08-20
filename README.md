@@ -2,37 +2,48 @@
 This repository will help to understnad asic flow
 GUIDE : Kunal Ghosh
 
+# Introduction to Course 
+
+
 
 # Installation
 1. Install Prerequisites:
 ```
 sudo apt update
 sudo apt install autoconf automake autotools-dev curl python3 libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev git
+
 ```
 2. Clone the RISC-V GNU Toolchain Repository:
 ```
 git clone --recursive https://github.com/riscv/riscv-gnu-toolchain
+
 ```
 3. Build and Install the Toolchain:
 ```
 cd riscv-gnu-toolchain
 ./configure --prefix=/opt/riscv
 make
+
 ```
 4. Update Your Path:
+   
 ```
 
 echo 'export PATH=$PATH:/opt/riscv/bin' >> ~/.bashrc
 source ~/.bashrc
+
 ```
 5. Test the Installation:
+   
 ```
 riscv64-unknown-elf-gcc --version
+
 ```
 
 #Course
 #DAY1
 ##Create a simple C code that counts sum of number from 1 to n 
+
 ```
 #include<stdio.h>
 
@@ -44,7 +55,9 @@ int main(){
 	printf("Sum of numbers from 1 to %d is %d \n",n,sum);
 	return 0;
 }
+
 ```
+
 ### Using RiscV complier 
 use command ``` riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sumton.o sumton.c ```
 
