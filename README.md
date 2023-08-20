@@ -51,9 +51,9 @@ riscv64-unknown-elf-gcc --version
 
 ```
 
-#Course
-#DAY1
-##Create a simple C code that counts sum of number from 1 to n 
+# Course
+# DAY1
+## Create a simple C code that counts sum of number from 1 to n 
 
 ```
 #include<stdio.h>
