@@ -5,12 +5,14 @@ GUIDE : Kunal Ghosh
 # Introduction to Course 
 
 ## Risc-V Architecture 
+
 RISC-V is an open-source instruction set architecture (ISA) designed to be highly flexible, extensible, 
 and customizable.
 An instruction set architecture defines the set of instructions that a computer processor can execute,
 along with the format of those instructions and the underlying hardware organization.
 
 ## Application to Hardware
+
 High Level Language (C,Python etc) ---> Compiler ---> Instruction Set Architecture ---> Assembler --- > Hardware 
 Instruction Set Architecture(ISA) is were our course concentrates , ISA depends on Hardware , Eg : A risc-v hardware will have risc-v isa , An intel x86 hardware will support x86 ISA 
 So complier gives .exe (executable file) to Assembler which further generates the binary form which is given to hardware 
