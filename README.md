@@ -91,6 +91,137 @@ We can see number of instructions are reduced
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/c4344940-0cc6-48ae-b8a5-572f38792582)
 
 ### Spike Simulation & Debugging
+#### will get updated soon....
+
+
+# Integer Number Representation
+## Unsigned numbers 
+
+Unsigned numbers play a crucial role in the RISC-V Instruction Set Architecture (ISA). In RISC-V, unsigned numbers are non-negative integers represented in binary format. They are fundamental for various arithmetic and logical operations, providing a foundation for tasks like data manipulation, memory addressing, and comparisons within the processor.
+
+They range from  0 to 2^(N) - 1.
+
+## Signed numbers 
+
+They represent both positive and neagtive numbers including zero.
+
+They range from (2^(N-1)) to 2^(N-1) - 1.
+
+
+### 64-bit Number system of Unsigned Numbers
+
+```
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	unsigned long long int max = (unsigned long long int) (pow(2,64) -1);
+	unsigned long long int min = (unsigned long long int) (pow(2,64) *(-1));
+	printf("lowest number represented by unsigned 64-bit integer is %llu\n",min);
+	printf("highest number represented by unsigned 64-bit integer is %llu\n",max);
+	return 0;
+}
+```
+
+#### Output will be pasted soon
+
+### 64-bit Number system of Signed Numbers
+
+```
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	long long int max = (long long int) (pow(2,63) -1);
+	long long int min = (long long int) (pow(2,63) *(-1));
+	printf("lowest number represented by signed 64-bit integer is %lld\n",min);
+	printf("highest number represented by signed 64-bit integer is %lld\n",max);
+	return 0;
+}
+```
+
+#### Ouput will be pasted soon
+
+
+# DAY 2 
+# Application Binary Interface (ABI)
+## Introduction
+
+The Application Binary Interface (ABI) serves as a bridge between software and hardware in a computer system. It defines the conventions and interfaces that enable compatibility between different software components, such as compilers, libraries, and operating systems, running on the same hardware architecture
+
+In the context of an Instruction Set Architecture (ISA), an ABI establishes rules for function calling conventions, parameter passing, register usage, and memory layout. This standardized interface ensures seamless interaction between software layers and hardware, fostering portability and interoperability across diverse software ecosystems on a given ISA.
+
+## Memory Allocation
+
+Memory allocation is the process of reserving and assigning segments of a computer's memory space for various data structures and program components, enabling efficient storage and retrieval of information during program execution.
+
+### Little Endian 
+
+   In little-endian representation, you store the least significant byte (LSB) at the lowest memory address and the most significant byte (MSB) at the highest memory address.
+
+   For example : 
+   ```
+    Decimal Value: 1311768467463790320 (0x123456789ABCDEF0 in hexadecimal)
+
+    Little-Endian Representation (in bytes): 0xF0 0xDE 0xBC 0x9A 0x78 0x56 0x34 0x12
+
+   ```
+
+### Big Endian 
+
+ In big-endian representation, you store the most significant byte (MSB) at the lowest memory address and the least significant byte (LSB) at the highest memory address.
+
+ For example :
+  ```
+   Decimal Value: 1311768467463790320 (0x123456789ABCDEF0 in hexadecimal)
+
+   Big-Endian Representation (in bytes): 0x12 0x34 0x56 0x78 0x9A 0xBC 0xDE 0xF0
+
+```
+
+# LOAD , ADD , STORE instruction
+## Introduction 
+
+LOAD instruction retrieves data from memory, transferring it to a register in a computer's architecture, enabling data access for computation. 
+ADD instruction performs arithmetic addition on values within registers, contributing to mathematical and logical operations.
+STORE instruction writes data from a register to memory, facilitating the storage of computed results or values for later use in a program.
+
+Example for LOAD:
+```
+LW R1, 16(R2)
+This RISC-V instruction loads a 32-bit word from memory at address R2 + 16 into register R1
+```
+Example for ADD:
+```
+ADD R3, R1, R2
+The RISC-V ADD instruction adds the values in registers R1 and R2, storing the result in register R3.
+```
+Example for STORE:
+```
+SW R5, 8(R4)
+This RISC-V instruction stores the value from register R5 into memory at address R4 + 8.
+```
+
+# 32-bit registers (RISC-V ISA)
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/70ab0325-f800-4f93-818a-dd100a3100d7)
+
+# ABI Names
+
+Application Binary Interface (ABI) names refer to standardized conventions used to define the interface between different software components, such as compilers, libraries, and operating systems, within a given architecture. These names provide a consistent way to represent data types, function calling conventions, register usage, and more, ensuring compatibility and seamless communication across diverse software layers. ABI names play a vital role in enabling portability and interoperability in software development for specific hardware architectures like x86, ARM, or RISC-V.
+
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/d29e6e30-c14a-4d13-8ad5-9f9fdc8bc94a)
+
+
+# LAB for ABI function calls
+### will get updated soon
+
+
+
+
+
+
 
 
 
