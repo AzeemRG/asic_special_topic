@@ -17,7 +17,10 @@ High Level Language (C,Python etc) ---> Compiler ---> Instruction Set Architectu
 Instruction Set Architecture(ISA) is were our course concentrates , ISA depends on Hardware , Eg : A risc-v hardware will have risc-v isa , An intel x86 hardware will support x86 ISA 
 So complier gives .exe (executable file) to Assembler which further generates the binary form which is given to hardware 
 
-# Installation
+</details>
+<details>
+<summary>INSTALLATION </summary>
+<br>
 1. Install Prerequisites:
 ```
 sudo apt update
@@ -52,7 +55,11 @@ riscv64-unknown-elf-gcc --version
 ```
 
 # Course
-# DAY1
+
+<details>
+<summary> DAY 1: Introduction to RISCV ISA and GNU Compiler Toolchain</summary>
+<br>
+	
 ## Create a simple C code that counts sum of number from 1 to n 
 
 ```
@@ -158,7 +165,12 @@ int main(){
 
 
 
-# DAY 2 
+
+</details>
+<details>
+<summary>DAY 2 : Introduction to ABI and Basic Verification Flow </summary>
+<br>
+	
 # Application Binary Interface (ABI)
 ## Introduction
 
@@ -230,7 +242,26 @@ Application Binary Interface (ABI) names refer to standardized conventions used 
 
 
 # LAB for ABI function calls
-### will get updated soon
+## C programm using ABI function call 
+
+create one .c and assembly file (.s)
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8ec712f4-da76-4761-9e01-218443667ab5)
+
+Now use command  
+``` riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1to20.o sum1to20.c load.s ```
+``` spike pk sum1to20.o ```
+``` riscv64-unknown-elf-objdump -d sum1to20.o | less ```
+
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/855bcd13-709b-43f0-b270-e567e7ec5d8b)
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/27af99aa-30c0-4851-96ea-2a0371564320)
+
+
+
+
+
 
 
 
