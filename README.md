@@ -19,7 +19,9 @@ So complier gives .exe (executable file) to Assembler which further generates th
 
 # Software requirements 
 Ubuntu 20+
+
 RAM = 6gb
+
 Disc Space= 200gb
 
 # Installation
