@@ -17,10 +17,7 @@ High Level Language (C,Python etc) ---> Compiler ---> Instruction Set Architectu
 Instruction Set Architecture(ISA) is were our course concentrates , ISA depends on Hardware , Eg : A risc-v hardware will have risc-v isa , An intel x86 hardware will support x86 ISA 
 So complier gives .exe (executable file) to Assembler which further generates the binary form which is given to hardware 
 
-</details>
-<details>
-<summary>INSTALLATION </summary>
-<br>
+#Installation
 1. Install Prerequisites:
 ```
 sudo apt update
