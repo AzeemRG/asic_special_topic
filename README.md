@@ -91,7 +91,20 @@ We can see number of instructions are reduced
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/c4344940-0cc6-48ae-b8a5-572f38792582)
 
 ### Spike Simulation & Debugging
-#### will get updated soon....
+Spike simulates the execution of RISC-V instructions on a virtual processor, allowing developers to run and analyze RISC-V programs without the need for physical hardware. This simulator accurately models the behavior of a RISC-V processor according to the RISC-V Instruction Set Architecture (ISA) specifications
+
+``` spike pk sumton.o```
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/2b6c6ba7-0e0c-4983-9dea-2083a48692ec)
+
+
+for debugging we use ``` spike -d pk sum1ton.c ```
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/43d1db63-7342-4633-a72a-9f4e353481b4)
+
+
+
+
 
 
 # Integer Number Representation
@@ -123,7 +136,8 @@ int main(){
 }
 ```
 
-#### Output will be pasted soon
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/6a021bb7-bac2-4629-80d7-c32babe93ffd)
+
 
 ### 64-bit Number system of Signed Numbers
 
@@ -140,7 +154,8 @@ int main(){
 }
 ```
 
-#### Ouput will be pasted soon
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/0129a96b-01d3-4e56-82d3-38425f1237c8)
+
 
 
 # DAY 2 
