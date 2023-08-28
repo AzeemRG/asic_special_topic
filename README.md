@@ -297,6 +297,16 @@ Now use command
 
  # Lab Work for Day 3 
 
+ ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/397a02ee-acdb-4681-a004-c01cea50baf8)
+
+ ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/9d09fc3c-78dd-473a-9835-acd761827568)
+
+ ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8554f392-e149-4d6f-bafa-0302caebcbc0)
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8c5d8eed-36d1-4f96-b232-1d056c889641)
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/aab789c4-bbc1-4126-8bcd-26aaac536bc5)
+
 
 
  </details>
