@@ -289,7 +289,7 @@ Now use command
  ##### Syntthesizer :  Synthesizer is the tool that we use for converting the RTL to netlist
  ##### .lib : Collection of various Logical Modules
 
- ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/2825e168-fed4-47d0-b5c8-1df0d975dbe5)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/b1648cde-bf15-4934-b385-23ff816c4792)
 
  Setup Time: The minimum time a data input must be stable before the clock edge, ensuring it's properly captured by a flip-flop.
 
