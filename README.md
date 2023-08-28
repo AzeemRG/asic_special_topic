@@ -61,7 +61,7 @@ riscv64-unknown-elf-gcc --version
 # Course
 
 <details>
-<summary> DAY 1: Introduction to RISCV ISA and GNU Compiler Toolchain</summary>
+<summary> # DAY 1: Introduction to RISCV ISA and GNU Compiler Toolchain</summary>
 <br>
 	
 ## Create a simple C code that counts sum of number from 1 to n 
@@ -172,7 +172,7 @@ int main(){
 
 </details>
 <details>
-<summary>DAY 2 : Introduction to ABI and Basic Verification Flow </summary>
+<summary> # DAY 2 : Introduction to ABI and Basic Verification Flow </summary>
 <br>
 	
 # Application Binary Interface (ABI)
@@ -267,7 +267,7 @@ Now use command
 
 </details>
 <details>
-<summary>DAY 3 : Introduction to Verilog RTL Design and Synthesis </summary>
+<summary> # DAY 3 : Introduction to Verilog RTL Design and Synthesis </summary>
 <br>
 
 # Introduction to Yosys and Logic Synthesis
@@ -301,7 +301,7 @@ Now use command
 
  </details>
 <details>
-<summary>DAY 4 : Timing libs,Heirarchial vs Flat Synthesis </summary>
+<summary> # DAY 4 : Timing libs,Heirarchial vs Flat Synthesis </summary>
 <br>
 
 
