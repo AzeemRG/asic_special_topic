@@ -280,6 +280,28 @@ Now use command
 
   Yosys is a opensource framework for verilog RTL synthesis. Yosys helps convert the higher-level hardware description in a language like Verilog into a lower-level netlist representation that can be used for 
     further steps of RTL to netlist flow.
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/b632ed60-2523-42e2-ab5d-72c540c3f67a)
+
+ ##### Netlist : A netlist is a structural representation of a digital circuit, comprising interconnected gates, flip-flops, and other logic elements.
+ ##### Synthesis : Synthesis is the process of transforming a high-level hardware description into a lower-level representation suitable for implementation in hardware.
+ ##### RTL : (Register Transfer Level) is a hardware description abstraction capturing digital circuit behavior through sequential logic elements and data transfers between registers.
+ ##### Syntthesizer :  Synthesizer is the tool that we use for converting the RTL to netlist
+ ##### .lib : Collection of various Logical Modules
+
+ ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/2825e168-fed4-47d0-b5c8-1df0d975dbe5)
+
+ Setup Time: The minimum time a data input must be stable before the clock edge, ensuring it's properly captured by a flip-flop.
+
+ Hold Time: The minimum time a data input must remain stable after the clock edge, maintaining its validity for proper flip-flop operation.
+
+ # Lab Work for Day 3 
+
+ 
+
+ 
+
+
    
 
 
