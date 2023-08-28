@@ -61,7 +61,7 @@ riscv64-unknown-elf-gcc --version
 # Course
 
 <details>
-<summary> # DAY 1: Introduction to RISCV ISA and GNU Compiler Toolchain</summary>
+<summary># DAY 1: Introduction to RISCV ISA and GNU Compiler Toolchain</summary>
 <br>
 	
 ## Create a simple C code that counts sum of number from 1 to n 
