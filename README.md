@@ -297,6 +297,14 @@ Now use command
 
  # Lab Work for Day 3 
 
+
+
+ </details>
+<details>
+<summary>DAY 4 : Timing libs,Heirarchial vs Flat Synthesis </summary>
+<br>
+
+
  
 
  
