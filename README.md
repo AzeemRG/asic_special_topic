@@ -265,7 +265,22 @@ Now use command
 
 
 
+</details>
+<details>
+<summary>DAY 3 : Introduction to Verilog RTL Design and Synthesis </summary>
+<br>
 
+# Introduction to Yosys and Logic Synthesis
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/99a7c6bd-4f6c-4a3b-8935-29bba023f633)
+
+## Yosys : Introduction and more
+
+ ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/5e98785c-db52-4e1e-a508-54e910c1e634)
+
+  Yosys is a opensource framework for verilog RTL synthesis. Yosys helps convert the higher-level hardware description in a language like Verilog into a lower-level netlist representation that can be used for 
+    further steps of RTL to netlist flow.
+   
 
 
 
