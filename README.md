@@ -734,8 +734,8 @@ Similarly for other example
 
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8a2e6ae3-fde7-43b8-bb36-e18dc5dcb4c1)
 
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/e57995ad-e992-4ce9-b781-8e41cd84d3a4)
 
-![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/0869d12d-c1ed-4609-9f54-eb17c0be79e2)
    ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/6bfe373e-d5dc-483d-a82b-576da5032b9c)
 
 
