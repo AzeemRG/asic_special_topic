@@ -707,6 +707,42 @@ Now do same for remaining three styles
 
   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/1c0c7a11-df39-4c86-b9cc-3da0ca7b7ada)
 
+### Optimizations
+
+This is another example of multiplication file 
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/c6a1fed2-aa33-4eef-9eb4-7bc8106cd682)
+
+Invoke yosys from verilog_files directory as done earlier 
+
+run synthesis and check for info as done earlier
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/ed768908-5b9c-4e88-a47c-59a8ba6295a6)
+
+Here is the Logic Level Diagram 
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/db4b84a3-287e-4d0f-a1d8-95413a924a60)
+
+Here is the generated netlist which is optimized 
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/3147848f-7611-4b77-bdc8-316d6d28213c)
+
+Similarly for other example 
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/73bf2ba7-5b00-4c5e-8f47-ce7d2bfe552c)
+
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8a2e6ae3-fde7-43b8-bb36-e18dc5dcb4c1)
+
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/0869d12d-c1ed-4609-9f54-eb17c0be79e2)
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/6bfe373e-d5dc-483d-a82b-576da5032b9c)
+
+
+
+
+
+  
 
 
 
