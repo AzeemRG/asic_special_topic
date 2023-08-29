@@ -288,7 +288,7 @@ Now use command
  ##### RTL : (Register Transfer Level) is a hardware description abstraction capturing digital circuit behavior through sequential logic elements and data transfers between registers.
  ##### Syntthesizer :  Synthesizer is the tool that we use for converting the RTL to netlist
  ##### .lib : Collection of various Logical Modules
-
+   
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/b1648cde-bf15-4934-b385-23ff816c4792)
 
  Setup Time: The minimum time a data input must be stable before the clock edge, ensuring it's properly captured by a flip-flop.
@@ -297,25 +297,67 @@ Now use command
 
  # Lab Work for Day 3 
 
+ Enable administrative mode using command ``` sudo -i ```
+
+ Go to verilog_files and invoke yosys 
+
  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/397a02ee-acdb-4681-a004-c01cea50baf8)
+
+ Read Library using command ``` read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
+ 
+ Read Design using command ``` read_verilog good_mux.v ```
+ 
+ Go to synthesis step using command ``` synth -top good_mux ```
+
+ good_mux.v 
+ ```
+module good_mux (input i0 , input i1 , input sel , output reg y);
+always @ (*)
+begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+end
+endmodule
+
+```
 
  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/9d09fc3c-78dd-473a-9835-acd761827568)
 
+ After complition of synthesis we will go for genrating netlist. 
+
+ We will generate netlist using ABC tool which is present in yosys itself.
+ 
+ Use command ``` abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
+
  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8554f392-e149-4d6f-bafa-0302caebcbc0)
 
-![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8c5d8eed-36d1-4f96-b232-1d056c889641)
+To see the logic level design use command ```show ```
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8c5d8eed-36d1-4f96-b232-1d056c889641) 
+
+Here is the Logc level RTL of good_mux
 
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/aab789c4-bbc1-4126-8bcd-26aaac536bc5)
 
+To see or change the netlist 
+
+use command ``` write_verilog good_mux_netlist.v ``` and ``` !gedit good_mux_netlist.v ```
+
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/75e4bf12-030a-4471-8c65-e3cdd47d4312)
+
+Here is the netlist for the mux example used
 
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/30160938-3252-44d3-8225-bcbd7384be42)
 
+To simplify the netlist use command ``` write_verilog -noattr good_mux_net.v ``` 
 
 ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8d7db4ab-f826-4eba-b757-5fa9780cf1f8)
 
-![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/0ae46adb-8f16-4ba3-9c0c-5ae050b82e5a)
+Here is the simpligied netlist
 
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/0ae46adb-8f16-4ba3-9c0c-5ae050b82e5a)
 
 
 
