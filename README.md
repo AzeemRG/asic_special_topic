@@ -915,7 +915,7 @@ Here are some examples of same skywater lib
 
    This image explains well about tool usage
 
-   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/54db52ee-7ea9-4399-864f-d8766da59634)
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8507ed63-feec-40a1-9162-43358f12d60b)
 
    ## Simulation and Synthesis Missmatch
 
