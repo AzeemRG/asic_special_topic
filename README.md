@@ -740,6 +740,122 @@ Similarly for other example
 
 
 
+</details>
+<details>
+<summary> # DAY 5 : Combinational and Sequention Optimisation </summary>
+<br>
+
+## Introduction 
+
+#### Combinational Logic: 
+
+  It is a type of digital logic circuit in which the output depends solely on the current input values, with no consideration of previous inputs or any concept of time.
+
+  Combinational logic circuits produce outputs based on a straightforward mapping of inputs to outputs, without any memory or feedback.
+
+#### Sequential Logic :
+  
+   Unlike combinational logic, which processes inputs instantaneously and has no memory, sequential logic circuits incorporate memory elements to store and process information over time. Here's an introductory overview of sequential logic:
+
+## Optimization of Combinational and Sequential Logic :
+
+#### Combinational Optimization 
+
+ Optimizing a combinational logic circuit involves fine-tuning the logic design to achieve the most efficient digital implementation, with a focus on minimizing both area and power consumption. This optimization process employs various techniques, including:
+
+   Constant Folding: Constant propagation is a strategy employed in compiler design and digital circuit synthesis. It enhances code and circuit efficiency by substituting variables or expressions with their constant values whenever it's feasible.
+
+  Boolean Function Optimization: Also referred to as logic minimization or Boolean logic simplification, this technique is essential in digital design. It seeks to streamline Boolean expressions and logic circuits by reducing the quantity of terms, literals, and gates required to represent a specific logical function.
+
+These optimization methods aim to transform the circuit into a more compact and energy-efficient form, contributing to overall improved performance and resource utilization.
+
+Follow the commands for combinational optimization 
+
+```
+   gvim opt_check.v
+   read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+   read_verilog opt_check.v
+   synth -top opt_check
+   opt_clean -purge
+   abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+   show
+```
+Here are the examples of some circuits present in our skywater library 
+#### opt_check.v
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/fca373f7-bcb3-4f58-a976-139b203b2f15)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/303fdca7-66d9-485e-bcb7-182258fcb73c)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/148170d7-3954-484c-bcba-58fa15477c78)
+
+#### opt_check2.v
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/918df0dc-30f0-4e1d-b996-eea0b57e0c8b)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/a79ddf25-f700-4116-9d6d-7e278c4825cd)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/d77c5c89-a2de-427b-815f-d20675bc6757)
+
+#### opt_check3.v
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/a5962e05-d1cb-491c-8395-777bb7593002)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/262bd8fe-bd98-4673-871b-9a6917333aab)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/bbb941a7-b480-4d11-8959-a65f0a1a1341)
+
+#### opt_check4.v 
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8befe2c6-375d-4487-8878-3104973d0a34)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/f0f2a766-c237-476f-ad3a-a311d7ebc1da)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/a36d5284-6534-41e4-ab2b-13166acfc5d5)
+
+#### multiple_module_opt.v
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/c34f9cdd-771c-43f6-b47a-602f307f0f1c)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/bc3581f3-cd1b-4039-a5fa-9995565dbfce)
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/f7cc1c65-40f1-471a-9a2a-c0d4f41fff63)
+
+
+#### Sequential Optimization 
+
+  Sequential logic optimizations involve the enhancement of efficiency, performance, and resource utilization within digital circuits that incorporate memory elements such as flip-flops and latches.
+
+The optimization of sequential logic circuits holds significant importance as it ensures that digital systems meet stringent timing requirements, minimize power consumption, and occupy the least physical space, all while upholding correct functionality.
+
+Here are two key optimization methods in this context:
+
+   Sequential Constant Propagation: Also referred to as constant propagation across sequential elements, this optimization technique is employed in digital design to identify and propagate constant values through sequential logic components like flip-flops and registers. The objective is to substitute variable values with their known constant counterparts at various stages of the logic circuit. This process greatly improves the design's performance and resource utilization.
+
+   State Optimization: Known as state minimization or state reduction, this optimization technique is used in digital design to diminish the number of states within finite state machines (FSMs) while preserving the original functionality. By reducing the complexity of the FSM, state optimization contributes to more streamlined and efficient digital circuits.
+
+Follow this commands for sequential optimization
+
+```
+   
+    gvim dff_const1.v
+    iverilog dff_const1.v tb_dff_const1.v
+    /a.out
+    gtkwave tb_dff_const1.vcd
+
+
+    read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+    read_verilog dff_const1.v
+    synth -top dff_const1
+    dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+    abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+    show
+
+
+```
+Here are some examples of same skywater lib
+
+#### dff_const1.v
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8e7d97ba-e522-4912-b2ca-d1a9e6d35c6f)
+
+  
+
+
+
+
+  
+
 
 
   
