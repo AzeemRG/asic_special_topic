@@ -830,7 +830,7 @@ Follow this commands for sequential optimization
    
     gvim dff_const1.v
     iverilog dff_const1.v tb_dff_const1.v
-    /a.out
+    ./a.out
     gtkwave tb_dff_const1.vcd
 
 
@@ -848,6 +848,75 @@ Here are some examples of same skywater lib
 #### dff_const1.v
 
   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/8e7d97ba-e522-4912-b2ca-d1a9e6d35c6f)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/f210bc67-9beb-4acd-a790-db4f092ab580)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/431dfe7f-1c9d-4258-85e8-ee051e5f6a31)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/ee2aaa0f-49ef-4365-affa-95cad77ad762)
+
+#### dff_const2.v
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/2710fa20-1c0f-4890-999b-af99946728de)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/51e646bc-2905-4233-bde0-a83d57c9ac30)
+  
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/6bee1f97-301a-4fd7-bd48-bead404a33fc)
+  
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/50d6ea92-e707-431a-a28f-effe2b7b2173)
+
+#### dff_const3.v
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/a622b148-d903-4cf4-8484-d9297796a7e9)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/e2601d32-b063-40e8-82dc-0acb073e6ee9)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/a38dd52a-30bd-452c-8d43-4da2dbc2dc21)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/371f888d-2856-40c5-ad44-47f5d485aa07)
+
+#### dff_const4.v
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/bbe38c42-72ee-41d3-8c3b-1caa88ecbb6f)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/e0fea305-e043-4e6a-adc2-b1d4e10f4ad3)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/7e3a7284-87e1-41c2-9fce-1204b2123d31)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/087c6b4e-4cfc-4fae-ab00-f5d29938f7fe)
+
+#### dff_const5.v
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/fcc45d0e-e793-4f85-ae9f-5e470a8da89f)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/fa111809-d543-4da4-96b9-ce56f83e1301)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/d86fab30-c9c6-4abc-94a9-aec1cf91f2f1)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/342ed80d-cb65-4aa4-a3d9-b5b5d3a7dab4)
+
+#### counter_opt.v
+
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/27e65a04-6d38-44cf-b3ec-b292e60e003b)
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/eec4cf53-4c0c-4e0e-a57a-5e1f40eb83cc)
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/388ac26e-e2ee-4ce6-ba05-eaf10ddcbce1)
+
+### counter_opt2.v
+
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/d1aa8b92-9ec9-4164-bb23-6d9b41be4ef2)
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/d1405e96-b008-43dc-a425-07716819b0a9)
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/60b564ea-6ae4-4679-b300-8b317ef2aa27)
+   
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
 
   
 
