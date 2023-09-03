@@ -895,8 +895,190 @@ Here are some examples of same skywater lib
    ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/60b564ea-6ae4-4679-b300-8b317ef2aa27)
    
 
+</details>
+<details>
+<summary> # DAY 6 : GLS Synthesis-Simulation Mismatch and Blocking Non-blocking Statements </summary>
+<br>
+
+ ## Introduction
+ 
+   GLS : Gate-level simulation is a digital design verification technique that models the behavior of a digital circuit at the level of logic gates and flip-flops. It allows engineers to assess the functionality and performance of a 
+   digital  design before physical implementation, helping to detect errors and optimize designs.
+
+   Gate-level simulation entails testing a digital circuit using the very logic gates and flip-flops that constitute the design, rather than abstract descriptions at higher levels like RTL (Register Transfer Level). 
+   
+   This simulation step usually comes after logic synthesis, where a high-level design description is converted into a detailed netlist of gates and flip-flops. 
+   
+   Gate-level simulation serves the purpose of verifying that the design is logically correct after synthesis while also ensuring that it meets the required timing constraints.
+
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/b58d0dc2-72e5-4b44-92d7-ee0b614857c5) 
+
+   This image explains well about tool usage
+
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/54db52ee-7ea9-4399-864f-d8766da59634)
+
+   ## Simulation and Synthesis Missmatch
+
+  A synthesis-simulation discrepancy arises when the behavior of a digital circuit, as simulated on a computer, doesn't align with the intended or expected behavior after the circuit has been synthesized.
+  
+  This disparity can emerge due to several factors, including timing complications, conflicts in optimization approaches, and variations in how the simulation and synthesis tools model the circuit. 
+    
+  This mismatch is a significant issue in digital design because it signals that the real-world hardware implementation may not function as intended, raising the risk of functional or timing problems in the final chip production.
+
+  ## Blocking and Non Blocking Statements
+   
+  Blocking Statements:
+
+  Execution Order: In blocking assignments, statements are executed sequentially, one after the other, in the order they appear in the code. Each assignment is completed before the next one begins.
+
+  Updates and Dependencies: Blocking assignments update variables immediately, and any subsequent statements that depend on those variables will see the updated values in the same simulation time step.
+
+  ```
+     module blocking_example;
+  reg A, B;
+
+  initial begin
+    A = 1;
+    B = A; // B is assigned the value of A AFTER A is assigned 1
+    $display("A=%b, B=%b", A, B); // Prints "A=1, B=1"
+  end
+endmodule
+
+  ```
+Non-blocking Statements:
+
+  Execution Order: Non-blocking assignments, denoted by "<=", allow multiple assignments to be scheduled concurrently, and they do not affect the execution order of subsequent statements. All non-blocking assignments in a procedural block 
+  execute simultaneously.
+
+  Updates and Dependencies: Non-blocking assignments schedule updates for the next simulation time step, ensuring that all assignments within the same procedural block occur concurrently. This helps model behavior as it would happen in 
+  hardware.
+
+ ```
+   module nonblocking_example;
+  reg A, B;
+
+  initial begin
+    A <= 1;
+    B <= A; // B is assigned the value of A at the NEXT time step
+    $display("A=%b, B=%b", A, B); // Prints "A=1, B=1"
+  end
+ endmodule
+
+ ```
+
+ ## LAB for Day 6 :
+
+   Here are the set of commands which need to followed
+
+   For Simulation 
+
+     ```
+         gvim teranry_operator_mux.v
+	 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+         ./a.out
+         gtkwave tb_ternary_operator_mux.vcd
+     ```
+
+   For Synthesis 
+
+     ``` 
+        read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+    	read_verilog ternary_operator_mux.v
+    	synth -top ternary_operator_mux
+    	abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+    	show
+     ```
+
+   For Gate Level Synthesis
+
+    ``` 
+         iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator_mux.v
+    	./a.out
+    	gtkwave tb_bad_mux.vcd
+     ```
+   
+   Now here are the two examples that explains this well 
+
+   #### teranry_operator_mux.v
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/82859116-444c-4c7f-9d74-926624decdff)
+
+     
+   ##### Simulation 
+
+ ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/1571f358-f7c9-46bd-ab85-abaff82ca79e)
 
 
+   ##### Synthesis 
+
+ ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/9219bb0d-84b7-4794-bc35-e0bd0deb8c20)
+ ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/9333d2ce-be41-467a-b049-0c920597a006)
+
+   ##### Gate Level Simulation 
+      
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/9f65b0d9-1983-4e11-8dfa-40e31b9b5daf)
+
+    
+
+#### bad_mux.v 
+
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/e65e9b1d-1d0f-43d0-9371-e724d9d52c59)
+
+
+  ##### Simulation 
+
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/edd10e3e-4004-44be-a9f1-c8c4b24b41c8)
+
+
+  ##### Synthesis 
+
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/bd0fcba9-2341-4518-997e-f9e8147cd7da)
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/96840520-bed8-4f85-9514-775cd70f2908)
+   
+  ##### Gate Level Simulation 
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/9aae11eb-04e7-4f60-a988-b170d720c752)
+
+
+  This example shows the synthesis mismatch due to blocking caveat
+
+  #### blocking_caveat.v
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/74f8f9e9-0298-4689-bd91-06e28d8ef79d)
+
+  ##### Simulation 
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/00435bdd-21fe-4d35-884c-c21cd45e77a5)
+
+
+  ##### Synthesis 
+
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/0093ca7d-bcfe-4758-8592-d4e34a05e425)
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/7832035a-06fb-4da2-b96d-e26b319bedab)
+  
+  ##### Gate Level Simulation 
+
+  
+  ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/9a525829-74b5-48c1-9a66-ed47da946fad)
+
+
+
+
+
+
+
+  
+
+
+
+
+
+    
+
+   
+
+
+   
 
 
    
