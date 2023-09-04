@@ -919,11 +919,15 @@ Here are some examples of same skywater lib
 
    ## Simulation and Synthesis Missmatch
 
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/bd12a96f-3661-4d6a-b5d1-135c1e72ba58)
+
+
   A synthesis-simulation discrepancy arises when the behavior of a digital circuit, as simulated on a computer, doesn't align with the intended or expected behavior after the circuit has been synthesized.
   
   This disparity can emerge due to several factors, including timing complications, conflicts in optimization approaches, and variations in how the simulation and synthesis tools model the circuit. 
     
-  This mismatch is a significant issue in digital design because it signals that the real-world hardware implementation may not function as intended, raising the risk of functional or timing problems in the final chip production.
+  This mismatch is a significant issue in digital design because it signals that the real-world hardware implementation may not function as intended, raising the risk of functional or timing problems in the 
+  final chip production.
 
   ## Blocking and Non Blocking Statements
    
