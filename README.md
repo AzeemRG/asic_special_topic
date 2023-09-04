@@ -757,6 +757,9 @@ Similarly for other example
   
    Unlike combinational logic, which processes inputs instantaneously and has no memory, sequential logic circuits incorporate memory elements to store and process information over time. Here's an introductory overview of sequential logic:
 
+   ![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/cf4ed73a-594a-4ef1-9be8-8597dcb91e6a)
+
+
 ## Optimization of Combinational and Sequential Logic :
 
 #### Combinational Optimization 
@@ -969,6 +972,11 @@ Non-blocking Statements:
  endmodule
 
  ```
+
+This image shows good difference between Blocking and Non Blocking Statements : 
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/3d582797-389f-4faf-8372-e5a68317cf39)
+
 
  ## LAB for Day 6 :
 
