@@ -403,7 +403,9 @@ Here is the simpligied netlist
  # Hirarchial vs Flat Synthesis 
 
    Hierarchical Synthesis:
-    Hierarchical synthesis involves breaking down a complex design into smaller, more manageable modules or hierarchies. Each module represents a functional block of the design, and these modules can be further divided into sub-modules.         The design hierarchy often mirrors the logical and functional structure of the system being designed.
+    Hierarchical synthesis involves breaking down a complex design into smaller, more manageable modules or hierarchies. Each module represents a functional block of the design, and these modules can be 
+    further divided into sub-modules. 
+    The design hierarchy often mirrors the logical and functional structure of the system being designed.
 
    Flat Synthesis : 
       Flat synthesis involves synthesizing the entire design as a single, monolithic entity without breaking it into smaller hierarchical modules. In a flat design, all logic is synthesized together, 
@@ -571,6 +573,8 @@ Sequential circuits built using flip-flops can implement state machines, which a
 
 Counters and Registers:
 Flip-flops are the building blocks of counters and registers. Counters are used for tasks like generating clock dividers, frequency dividers, and timing events. Registers are used for temporary data storage, data manipulation, and data transfer between different parts of a circuit.
+
+![image](https://github.com/AzeemRG/asic_special_topic/assets/128957056/41f582ba-7c87-4930-a57f-088ce84fa1d5)
 
 Now here are the examples of different styles.
 
